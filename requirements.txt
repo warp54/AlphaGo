@@ -1,1 +1,18 @@
 discord.py==0.16.12
+asyncio
+atetime
+time
+random
+urllib.request
+urllib
+bs4
+sys
+json
+webdriver
+openpyxl
+Member
+commands
+youtube_dl
+urlopen, Request
+os
+re
