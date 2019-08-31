@@ -446,8 +446,9 @@ async def on_message(message: object):
         player = await voice_client.create_ytdl_player(url, after=lambda: check_queue(server.id))
         print(player.is_playing())
         players[server.id] = player
-        await client.send_message(message.channel, embed=discord.Embed(description="재생한다!!!!"))
+        await client.send_message(message.channel, embed=discord.Embed(description="재생!"))
         print(player.is_playing())
         player.start()
 
-app.run(token)
+access_token = os.environ["BOT_TOKEN"]       
+app.run(access_token)
